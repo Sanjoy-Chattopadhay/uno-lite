@@ -1,0 +1,126 @@
+/* App base */
+.app {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #222, #333);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #ddd;
+}
+
+.message {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #aaa;
+}
+
+/* Top card area */
+.top-card {
+  margin: 20px auto;
+}
+
+.top-card .card {
+  margin: 0 auto;
+}
+
+/* Hands */
+.hand-section {
+  margin-top: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+/* Card style */
+.card {
+  width: 80px;
+  height: 120px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.7);
+}
+
+/* Card colors */
+.red {
+  background: linear-gradient(to bottom right, #e63946, #b22234);
+}
+
+.green {
+  background: linear-gradient(to bottom right, #2a9d8f, #21867a);
+}
+
+.blue {
+  background: linear-gradient(to bottom right, #457b9d, #1e3d58);
+}
+
+.yellow {
+  background: linear-gradient(to bottom right, #f4d35e, #d4af37);
+  color: #000;
+}
+
+/* Bot card back */
+.card.back {
+  background: repeating-linear-gradient(
+    45deg,
+    #555,
+    #555 10px,
+    #666 10px,
+    #666 20px
+  );
+  font-size: 1.8rem;
+  color: #ccc;
+  pointer-events: none;
+}
+
+/* Draw button */
+.draw-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background-color: #ffcc00;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.draw-button:hover {
+  background-color: #e6b800;
+}
+
+.draw-button:disabled {
+  background-color: #777;
+  color: #444;
+  cursor: not-allowed;
+}
